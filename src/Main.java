@@ -30,14 +30,38 @@ public class Main {
         else {System.out.println(year + " год не является високосным ");}
 
         //task5.4//
-        int deliveryDistance = 102;
-
+        int deliveryDistance = 95;
         int day;
         if (deliveryDistance <= 20) {day = 1;
             System.out.println("Потребуется 1 день ");}
         else if (deliveryDistance > 20) {day = (deliveryDistance - 20) / 40 + 1;
             System.out.println("Потребуется " + day + " дня(ей) ");}
 
-
+        //task5.5//
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println(" Этот месяц относится к зиме ");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println(" Этот месяц относится к весне ");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println(" Этот месяц относится к лету ");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println(" Этот месяц относится к осени ");
+                break;
+            default:
+                System.out.println(" Такого месяца нет ");
+            }
     }
 }
