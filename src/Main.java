@@ -29,6 +29,15 @@ public class Main {
             System.out.println(year + " год является високосным ");}
         else {System.out.println(year + " год не является високосным ");}
 
+        //task5.4//
+        int deliveryDistance = 102;
+
+        int day;
+        if (deliveryDistance <= 20) {day = 1;
+            System.out.println("Потребуется 1 день ");}
+        else if (deliveryDistance > 20) {day = (deliveryDistance - 20) / 40 + 1;
+            System.out.println("Потребуется " + day + " дня(ей) ");}
+
 
     }
 }
